@@ -1,9 +1,9 @@
-import {  Outlet  } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import ParticlesContainer from "../components/Particles";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 import Footer from "../components/footer";
 
-const DefaultLayout = ()=>{
+const DefaultLayout = () => {
   return (
     <div className="App overflow-x-hidden flex flex-col">
       <ParticlesContainer />
@@ -24,6 +24,6 @@ const DefaultLayout = ()=>{
       <Footer />
     </div>
   );
-}
+};
 
-export default DefaultLayout; 
+export default DefaultLayout;

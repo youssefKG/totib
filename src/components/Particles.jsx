@@ -1,19 +1,29 @@
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import { useCallback } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { loadSlim } from "@tsparticles/slim";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 function ParticlesContainer(props) {
-  // this customizes the component tsParticles installation
-  const customInit = useCallback(async (engine) => {
-    // this adds the bundle to tsParticles
-    await loadFull(engine);
-  });
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
 
   const options = {
     background: {
-      color: { value: "#000022", },
+      color: { value: "#000022" },
     },
     fpsLimit: 120,
-    interactivity: { events: { onClick: {
+    interactivity: {
+      events: {
+        onClick: {
           enable: false,
           mode: "push",
         },
@@ -59,7 +69,7 @@ function ParticlesContainer(props) {
           enable: true,
           area: 800,
         },
-        value: 35,
+        value: 65,
       },
       opacity: {
         value: 0.5,
@@ -74,6 +84,6 @@ function ParticlesContainer(props) {
     detectRetina: true,
   };
 
-  return <Particles options={options} init={customInit} />;
+  return <Particles options={options} particlesLoaded={particlesLoaded} />;
 }
 export default ParticlesContainer;

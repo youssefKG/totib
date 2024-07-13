@@ -25,7 +25,7 @@ const ProjectDrawer = ({ handleCloseProjectDetail, projectDetail }) => {
           transition: "all 2000ms ",
           transform: `translateX(${projectDetail ? "0" : "60%"})`,
         }}
-        className="flex flex-col px-6 w-2/5 bg-[#001242]  overflow-y-scroll  text-white gap-10 h-screen justify-self-end self-end "
+        className="flex flex-col px-6 w-1/3 bg-[#001242]  overflow-y-scroll  text-white gap-10 h-screen justify-self-end self-end "
       >
         <div className="flex gap-3 flex-col py-4 sticky top-0 bg-[#001242] z-40">
           <div className="flex justify-between text-white items-center">
