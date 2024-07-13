@@ -9,7 +9,7 @@ import { FaShare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-const CardProject = ({ info }) => {
+const CardProject = ({ info, handleOpenProjectDetail }) => {
   const navigate = useNavigate();
 
   return (
@@ -17,7 +17,7 @@ const CardProject = ({ info }) => {
       initial={initial}
       whileInView={whileInView}
       transition={transition}
-      onClick={() => navigate("/project/" + info.id)}
+      onClick={handleOpenProjectDetail}
       viewport={viewPort}
       className="projectCard flex items-center flex-col  gap-4  relative pt-12
       hover:scale-105 border  border-gray-800 cursor-pointer hover:opacity-100

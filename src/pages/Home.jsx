@@ -6,6 +6,9 @@ import Navbar from "../components/Navabar";
 import Contact from "../components/Contact";
 import Technologies from "../components/technologies.jsx";
 import useVisibleSection from "../hooks/useHeighlightContent.jsx";
+import ProjectDrawer from "../components/ProjectDrawer.jsx";
+import ParticlesContainer from "../components/Particles.jsx";
+
 const Home = () => {
   const aboutRef = useRef(null);
   const technologiesRef = useRef(null);
@@ -19,11 +22,16 @@ const Home = () => {
     { ref: projectsRef, refName: "projects" },
     { ref: contactRef, refName: "contact" },
   ]);
+  const [projectDetail, setProjectDetail] = useState(null);
 
   const handleVisibleSection = (sectionName) => setActiveList(sectionName);
 
   return (
-    <div className="homeContainer  z-20 overflow-x-hidden font-mono">
+    <div className="homeContainer  z-10 overflow-x-hidden font-mono">
+      <ProjectDrawer
+        projectDetail={projectDetail}
+        handleCloseProjectDetail={() => setProjectDetail(null)}
+      />
       <Navbar activeList={activeList} setActiveList={setActiveList} />
       <div className="flex flex-col gap-10">
         <About
@@ -42,6 +50,7 @@ const Home = () => {
           journeyRef={journeyRef}
         />
         <Projects
+          handleOpenProjectDetail={(data) => setProjectDetail(data)}
           projectsRef={projectsRef}
           visibleSection={activeList}
           handleVisibleSection={handleVisibleSection}

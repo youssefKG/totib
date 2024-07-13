@@ -1,7 +1,7 @@
 import CardProject from "./CardProject";
 import { FaArrowRightLong } from "react-icons/fa6";
 import projectsData from "../assets/data/projectsData";
-const Projects = ({ projectsRef }) => {
+const Projects = ({ projectsRef, handleOpenProjectDetail }) => {
   return (
     <section
       ref={projectsRef}
@@ -17,7 +17,11 @@ const Projects = ({ projectsRef }) => {
 
       <div className="flex items-center flex-col justify-center gap-6 w-full sm:px-10 mt-6">
         {projectsData.map((e, i) => (
-          <CardProject info={e} key={e.id} />
+          <CardProject
+            info={e}
+            key={e.id}
+            handleOpenProjectDetail={() => handleOpenProjectDetail(e)}
+          />
         ))}
         <button
           className=" text-xl mt-4 font-bold text-gray-400
