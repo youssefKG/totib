@@ -30,18 +30,18 @@ const Contact = ({ contactRef }) => {
       viewport={viewPort}
       ref={contactRef}
       id="contact"
-      className="relative p-6 mb-6 h-screen "
+      className="flex flex-col gap-6  items-center relative p-6 mb-6 sm:h-screen "
       ini
     >
       <h
-        className=" font-extrabold text-white text-2xl tracking-wider border-b-[3px]
+        className=" font-extrabold text-white text-2xl self-start tracking-wider border-b-[3px]
         border-b-[#0094c6] p-2  "
       >
         Contact :
       </h>
       <div className="flex items-center flex-1  gap-8 flex-col h-full justify-center text-white   ">
         <p className="text-lg font font-medium text-gray-400">
-          Shot me an email directly on
+          Shot me an email directly on {"  "}
           <span className="font-bold text-gray-200 tracking-wider">
             yousseftaoussi894@gmail.com
           </span>

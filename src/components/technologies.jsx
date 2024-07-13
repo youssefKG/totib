@@ -15,7 +15,7 @@ const Technologies = ({ technologiesRef }) => {
       transition={transition}
       viewport={viewPort}
       id="technologies"
-      className="flex h-screen justify-center items-center flex-col  gap-12 p-4 m-6 sm:p-0"
+      className="flex sm:h-screen justify-center items-center flex-col  gap-12 p-4 m-6 sm:p-0"
       ref={technologiesRef}
     >
       <h
@@ -28,7 +28,7 @@ const Technologies = ({ technologiesRef }) => {
         {skillsImageUrls.map((url) => (
           <img
             src={url}
-            className=" border-b bg-white rounded-full hover:scale-105
+            className=" border-b bg-white rounded-full object-contain hover:scale-105
             transition-all cursor-pointer border-r  w-26 h-26 border-[#0094c6]
             p-2"
             alt="skills"

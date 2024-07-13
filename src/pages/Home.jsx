@@ -8,6 +8,7 @@ import Technologies from "../components/technologies.jsx";
 import useVisibleSection from "../hooks/useHeighlightContent.jsx";
 import ProjectDrawer from "../components/ProjectDrawer.jsx";
 import ParticlesContainer from "../components/Particles.jsx";
+import Services from "../components/Service.jsx";
 
 const Home = () => {
   const aboutRef = useRef(null);
@@ -15,12 +16,14 @@ const Home = () => {
   const journeyRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const servicesRef = useRef(null);
   const [activeList, setActiveList] = useVisibleSection([
     { ref: aboutRef, refName: "about" },
     { ref: technologiesRef, refName: "technologies" },
     { ref: journeyRef, refName: "journey" },
     { ref: projectsRef, refName: "projects" },
     { ref: contactRef, refName: "contact" },
+    { ref: servicesRef, refName: "services" },
   ]);
   const [projectDetail, setProjectDetail] = useState(null);
 
@@ -55,6 +58,7 @@ const Home = () => {
           visibleSection={activeList}
           handleVisibleSection={handleVisibleSection}
         />
+        <Services servicesRef={servicesRef} />
         <Contact
           contactRef={contactRef}
           visibleSection={activeList}

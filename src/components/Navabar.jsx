@@ -89,6 +89,15 @@ const Navbar = ({ setActiveList, activeList }) => {
             </a>
           </li>
           <li
+            className={`opacity-75 ${activeList === "services" && "text-white transitionClass transition-colors scale-110"} relative w-fit`}
+          >
+            <a onClick={() => setActiveList("services")} href="#contact">
+              <span className="text-[#0094c6] pr-4">{"{"}</span>
+              Services
+              <span className="text-[#0094c6] pl-4">{"}"}</span>
+            </a>
+          </li>
+          <li
             className={`opacity-75 ${activeList === "contact" && "text-white transitionClass transition-colors scale-110"} relative w-fit`}
           >
             <a onClick={() => setActiveList("contact")} href="#contact">
