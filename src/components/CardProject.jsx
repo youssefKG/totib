@@ -22,7 +22,7 @@ const CardProject = ({ info, handleOpenProjectDetail }) => {
       className="projectCard flex items-center flex-col  gap-4  relative pt-12
       hover:scale-105 border  border-gray-800 cursor-pointer hover:opacity-100
       transitionClass bg-[#001242]/40 hover:bg-[#040f16]/60
-       p-6 rounded-[4px] sm:max-w-2xl  w-full opacity-70"
+       p-6 rounded-[4px] sm:min-w-2xl sm:max-w-2xl  w-full opacity-70"
     >
       <img className=" rounded-lg " src={info.images[0]} alt="project img" />
       <div className=" flex  flex-col gap-4 flex-wrap">
@@ -44,16 +44,6 @@ const CardProject = ({ info, handleOpenProjectDetail }) => {
             <span>Password : </span>
             {info.demo.password}
           </p>
-        </div>
-        <div className="flex gap-2 flex-wrap">
-          {info.tec.map((t) => (
-            <p
-              className="p-1 px-3 text-gray-300  font-medium bg-[#005e7c]/70
-              text-[15px] rounded-full"
-            >
-              {t}
-            </p>
-          ))}
         </div>
       </div>
       <div className="absolute top-4 right-4  flex z-30 gap-4 text-white ">

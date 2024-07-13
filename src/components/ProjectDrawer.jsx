@@ -13,9 +13,9 @@ const ProjectDrawer = ({ handleCloseProjectDetail, projectDetail }) => {
   return (
     <div
       style={{
-        opacity: projectDetail ? 1 : 0,
-        transition: "all 400ms ",
-        transform: `translateX(${projectDetail ? "0" : "60%"})`,
+        // opacity: projectDetail ? 1 : 0,
+        transition: "all 800ms ",
+        transform: `translateX(${projectDetail ? "0" : "110%"})`,
       }}
       className="h-screen w-screen bg-black/65 fixed z-40   flex  justify-end"
     >
@@ -69,15 +69,23 @@ const ProjectDrawer = ({ handleCloseProjectDetail, projectDetail }) => {
           </p>
 
           <div className="flex items-center gap-4 flex-wrap">
-            <h1 className="font-semibold">Technologies: </h1>
-            {projectDetail?.tec.map((t) => (
-              <p className="border-white border p-1 text-[12px] text-[#0094c6]  px-2 rounded-full font-bold">
-                {t}
-              </p>
-            ))}
+            <div className="flex gap-2 flex-wrap">
+              <h1 className="font-semibold">Technologies: </h1>
+              {projectDetail?.tec.map((t) => (
+                <p
+                  className="p-1 px-3 text-gray-300  font-medium bg-[#005e7c]/70
+              text-[15px] rounded-full"
+                >
+                  {t}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="flex gap-2 justify-between items-center sticky w-full bg-[#005e7c] border-white border bottom-0 ">
+        <div
+          className="flex gap-2 justify-between items-center sticky w-full
+          bg-[#005e7c] border-white border bottom-0 "
+        >
           <button
             className="flex flex-1 items-center justify-center hover:bg-[#005e7c] gap-2  p-2 px-4
               border-white  rounded-[4px] text-white transitionClass transition-colors
