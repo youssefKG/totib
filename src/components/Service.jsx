@@ -15,7 +15,7 @@ const Services = ({ servicesRef }) => {
       transition={transition}
       ref={servicesRef}
       id=""
-      className="sm:h-screen  flex flex-col justify-center items-center gap-8 relative
+      className="sm:h-screen  flex flex-col justify-evenly items-center gap-8 relative
       p-4 mt-24 text-white font-medium   "
     >
       <h
@@ -24,7 +24,7 @@ const Services = ({ servicesRef }) => {
       >
         Services:
       </h>
-      <div className="flex flex-wrap justify-center gap-3">
+      <div className="flex flex-wrap  gap-3">
         {servicesData.map((s) => (
           <ServiceCard data={s} />
         ))}

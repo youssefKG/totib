@@ -15,7 +15,7 @@ const Projects = ({ projectsRef, handleOpenProjectDetail }) => {
         Recent Projects :
       </h>
 
-      <div className="flex  flex-wrap justify-center gap-6 w-full sm:px-10 mt-6">
+      <div className="flex items-center  flex-wrap  gap-6 w-full sm:px-10 mt-6">
         {projectsData.map((e, i) => (
           <CardProject
             info={e}

@@ -97,15 +97,6 @@ const Navbar = ({ setActiveList, activeList }) => {
               <span className="text-[#0094c6] pl-4">{"}"}</span>
             </a>
           </li>
-          <li
-            className={`opacity-75 ${activeList === "contact" && "text-white transitionClass transition-colors scale-110"} relative w-fit`}
-          >
-            <a onClick={() => setActiveList("contact")} href="#contact">
-              <span className="text-[#0094c6] pr-4">{"{"}</span>
-              Contact
-              <span className="text-[#0094c6] pl-4">{"}"}</span>
-            </a>
-          </li>
         </ul>
         <div className="flex sm:hidden justify-between p-2 fixed w-full border-[4px] z-50 border-b-gray-800 top-0 text-white items-center bg-[#0094c6]">
           <h1 className="font-semibold tracking-wider text-xl">Totib</h1>

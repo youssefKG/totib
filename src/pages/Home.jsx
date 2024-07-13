@@ -22,7 +22,6 @@ const Home = () => {
     { ref: technologiesRef, refName: "technologies" },
     { ref: journeyRef, refName: "journey" },
     { ref: projectsRef, refName: "projects" },
-    { ref: contactRef, refName: "contact" },
     { ref: servicesRef, refName: "services" },
   ]);
   const [projectDetail, setProjectDetail] = useState(null);
@@ -59,11 +58,6 @@ const Home = () => {
           handleVisibleSection={handleVisibleSection}
         />
         <Services servicesRef={servicesRef} />
-        <Contact
-          contactRef={contactRef}
-          visibleSection={activeList}
-          handleVisibleSection={handleVisibleSection}
-        />
       </div>
     </div>
   );
