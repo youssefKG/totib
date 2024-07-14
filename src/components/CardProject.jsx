@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import {
   transition,
@@ -5,13 +6,8 @@ import {
   animate as whileInView,
   viewPort,
 } from "../utils/animation";
-import { FaShare } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
-const CardProject = ({ info, handleOpenProjectDetail }) => {
-  const navigate = useNavigate();
 
+const CardProject = ({ info, handleOpenProjectDetail }) => {
   return (
     <motion.button
       initial={initial}

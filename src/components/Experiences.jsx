@@ -6,7 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import data from "../assets/data/journey";
 const Journey = ({ journeyRef }) => {
   return (
-    <section ref={journeyRef} id="journey" className="p-6 flex flex-col">
+    <section ref={journeyRef} id="journey" className="p-2 flex flex-col">
       <h
         className=" font-extrabold text-white mb-4  text-2xl tracking-wider
         border-b-[3px]  border-b-[#0094c6] p-2  w-fit  "

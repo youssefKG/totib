@@ -35,7 +35,7 @@ const Home = () => {
         projectDetail={projectDetail}
         handleCloseProjectDetail={() => setProjectDetail(null)}
       />
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-16">
         <About
           visibleSection={activeList}
           handleVisibleSection={handleVisibleSection}

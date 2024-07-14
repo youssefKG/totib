@@ -14,7 +14,7 @@ const About = ({ aboutRef }) => {
       ref={aboutRef}
       id=""
       className="flex flex-col justify-center items-center gap-8 relative
-      p-4 mt-24 text-white font-medium   "
+      p-2 mt-24 text-white font-medium   "
     >
       <h
         className=" font-extrabold text-white text-2xl tracking-wider w-fit self-start
@@ -29,12 +29,12 @@ const About = ({ aboutRef }) => {
         <div className="gap-6 flex flex-col">
           <div>
             <h
-              className="text-[#0094c6] border-dotted  border-gray-600 border p-4 tracking-wider
+              className="text-[#0094c6] border-dotted  border-gray-600 border sm:p-4 p-2 tracking-wider
               uppercase font-bold text-2xl flex flex-col mb-8"
             >
               Hi I'm Youssef Taoussi
             </h>
-            <p className="max-w-xl border-dotted  border-gray-600 border-x p-8 tracking-wider text-gray-200">
+            <p className="max-w-xl border-dotted  border-gray-600 text-sm sm:text-base border-x p-2 sm:p-8 tracking-wider text-gray-200">
               Hi There, I'm{" "}
               <span className="font-semibold text-[#0094c6]">
                 Youssed Taoussi{" "}

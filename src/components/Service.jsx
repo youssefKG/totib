@@ -16,7 +16,7 @@ const Services = ({ servicesRef }) => {
       ref={servicesRef}
       id=""
       className="sm:h-screen w-full  flex flex-col  flex-initial justify-center  gap-8 relative
-      p-4 mt-24 text-white font-medium   "
+      p-2 text-white font-medium   "
     >
       <h
         className=" font-extrabold text-white text-2xl tracking-wider w-fit self-start

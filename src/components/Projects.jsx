@@ -6,7 +6,7 @@ const Projects = ({ projectsRef, handleOpenProjectDetail }) => {
     <section
       ref={projectsRef}
       id="projects"
-      className="m-6 relative items-center flex flex-col gap-12"
+      className="p-2 relative items-center flex flex-col gap-12"
     >
       <h
         className=" font-extrabold text-white text-2xl tracking-wider
