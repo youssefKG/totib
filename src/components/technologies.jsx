@@ -15,7 +15,7 @@ const Technologies = ({ technologiesRef }) => {
       transition={transition}
       viewport={viewPort}
       id="technologies"
-      className="flex sm:h-screen justify-center items-center flex-col  gap-12 p-4 m-6 sm:p-0"
+      className="flex  justify-center items-center flex-col  gap-12 p-4 m-6 sm:p-0"
       ref={technologiesRef}
     >
       <h

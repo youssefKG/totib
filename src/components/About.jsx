@@ -54,10 +54,11 @@ const About = ({ aboutRef }) => {
             </p>
           </div>
           <button
-            className="p-2 rounded border border-white cursor-pointer hover:bg-[#005e7c] transitionClass 
-            text-white font-medium px-6 hover:opacity-80"
+            className="p-2 tracking-wider rounded border border-white
+            cursor-pointer hover:bg-[#005e7c] hover:text-black transitionClass text-white px-6
+            hover:opacity-80"
           >
-            <p>Resume</p>
+            <p className="font-bold tracking-wider">Check My Resume</p>
           </button>
         </div>
       </div>

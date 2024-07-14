@@ -30,11 +30,11 @@ const Home = () => {
 
   return (
     <div className="homeContainer  z-10 overflow-x-hidden font-mono">
+      <Navbar activeList={activeList} setActiveList={setActiveList} />
       <ProjectDrawer
         projectDetail={projectDetail}
         handleCloseProjectDetail={() => setProjectDetail(null)}
       />
-      <Navbar activeList={activeList} setActiveList={setActiveList} />
       <div className="flex flex-col gap-10">
         <About
           visibleSection={activeList}

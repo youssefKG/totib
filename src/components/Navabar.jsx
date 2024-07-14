@@ -101,10 +101,14 @@ const Navbar = ({ setActiveList, activeList }) => {
         <div className="flex sm:hidden justify-between p-2 fixed w-full border-[4px] z-50 border-b-gray-800 top-0 text-white items-center bg-[#0094c6]">
           <h1 className="font-semibold tracking-wider text-xl">Totib</h1>
           <button
-            className="hover:opacity-80 transition-all rounded-full"
+            className="transition-all p-2 hover:opacity-80 "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <IoCloseSharp className="text-2xl" /> : <FaBars />}
+            {isMenuOpen ? (
+              <IoCloseSharp className="" />
+            ) : (
+              <FaBars className="" />
+            )}
           </button>
         </div>
         <div className="sm:hidden h-[1px] w-full bg-gray-700 z-50 flex " />
