@@ -19,10 +19,10 @@ const CardProject = ({ info, handleOpenProjectDetail }) => {
       transition={transition}
       onClick={handleOpenProjectDetail}
       viewport={viewPort}
-      className="projectCard flex items-center flex-col  gap-4  relative pt-12
+      className="projectCard flex items-center flex-col  gap-4  relative 
       hover:scale-105 border  border-gray-800 cursor-pointer hover:opacity-100
-      transitionClass bg-[#001242]/40 hover:bg-[#040f16]/60
-       p-6 rounded-[4px] sm:min-w-2xl sm:max-w-xs  w-full opacity-70"
+      transitionClass bg-[#001242]/50 hover:bg-[#040f16]/80
+       p-6 rounded-[4px] sm:min-w-2xl sm:max-w-xs  w-full opacity-70 hover:border-white"
     >
       <img className=" rounded-lg " src={info.images[0]} alt="project img" />
       <div className=" flex  flex-col gap-4 flex-wrap">
@@ -45,24 +45,6 @@ const CardProject = ({ info, handleOpenProjectDetail }) => {
             {info.demo.password}
           </p>
         </div>
-      </div>
-      <div className="absolute top-4 right-4  flex z-30 gap-4 text-white ">
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="https://github.com/youssefKG"
-          className="text-2xl opacity-70 hover:opacity-100 transition-all"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://github.com/youssefKG"
-          className="text-2xl opacity-70 hover:opacity-100 transition-all"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <FaShare />
-        </a>
       </div>
     </motion.button>
   );

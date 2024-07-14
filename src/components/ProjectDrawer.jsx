@@ -84,7 +84,7 @@ const ProjectDrawer = ({ handleCloseProjectDetail, projectDetail }) => {
         </div>
         <div
           className="flex gap-2 justify-between items-center sticky w-full
-          bg-[#005e7c] border-white border bottom-0 "
+          bg-[#005e7c] border-white border bottom-8 "
         >
           <button
             className="flex flex-1 items-center justify-center hover:bg-[#005e7c] gap-2  p-2 px-4
