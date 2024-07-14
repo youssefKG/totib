@@ -13,7 +13,7 @@ const About = ({ aboutRef }) => {
       transition={transition}
       ref={aboutRef}
       id=""
-      className="sm:h-screen  flex flex-col justify-center items-center gap-8 relative
+      className="flex flex-col justify-center items-center gap-8 relative
       p-4 mt-24 text-white font-medium   "
     >
       <h

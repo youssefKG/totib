@@ -6,7 +6,7 @@ const Projects = ({ projectsRef, handleOpenProjectDetail }) => {
     <section
       ref={projectsRef}
       id="projects"
-      className="m-6 relative  items-center flex flex-col gap-12"
+      className="m-6 relative items-center flex flex-col gap-12"
     >
       <h
         className=" font-extrabold text-white text-2xl tracking-wider
@@ -15,7 +15,7 @@ const Projects = ({ projectsRef, handleOpenProjectDetail }) => {
         Recent Projects :
       </h>
 
-      <div className="flex items-center  flex-wrap  gap-6 w-full sm:px-10 mt-6">
+      <div className="flex lg:justify-start flex-grow-0 justify-center   items-center shrink flex-wrap  gap-4  mt-6">
         {projectsData.map((e, i) => (
           <CardProject
             info={e}

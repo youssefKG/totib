@@ -14,7 +14,7 @@ const Journey = ({ journeyRef }) => {
         Journey :
       </h>
       <div className="flex">
-        <VerticalTimeline animate={true}>
+        <VerticalTimeline animate={true} layout="1-column">
           {data.map((e, index) => {
             return (
               <VerticalTimelineElement
