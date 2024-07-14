@@ -11,7 +11,7 @@ const ServiceCard = ({ data }) => {
       initial={initial}
       whileInView={whileInView}
       transition={transition}
-      className="flex gap-4 items-center border border-white rounded-lg p-4 lg:max-w-sm"
+      className="flex gap-4 items-center border border-white rounded-lg p-4 flex-col  lg:max-w-sm"
     >
       <img src={data?.imgURL} />
       <div className="flex flex-col">
