@@ -28,7 +28,7 @@ const CardProject = ({ info, handleOpenProjectDetail }) => {
           </h>
           <FiArrowUpRight className="text-white font-bold w-5 h-5 upRightFlesh" />
         </div>
-        <p className="text-gray-400 tracking-wide text-sm line-clamp-3  ">
+        <p className="text-gray-400 tracking-wide text-xs sm:text-sm line-clamp-3  ">
           {info.description}
         </p>
         <div className="self-start justify-self-start text-sm text-start text-white">
