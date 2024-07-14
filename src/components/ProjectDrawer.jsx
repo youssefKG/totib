@@ -59,7 +59,7 @@ const ProjectDrawer = ({ handleCloseProjectDetail, projectDetail }) => {
           >
             {projectDetail?.images.map((img) => (
               <SwiperSlide className="flex items-center h-full">
-                <img src={img} className="rounded-xl w-full h-96" />
+                <img src={img} className="rounded-xl w-full " />
               </SwiperSlide>
             ))}
           </Swiper>
