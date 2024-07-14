@@ -15,7 +15,7 @@ const ProjectDrawer = ({ handleCloseProjectDetail, projectDetail }) => {
       style={{
         // opacity: projectDetail ? 1 : 0,
         transition: "all 800ms ",
-        transform: `translateX(${projectDetail ? "0" : "110%"})`,
+        transform: `translateX(${projectDetail ? "0" : "130%"})`,
       }}
       className="sm:h-screen w-screen sm:bg-black/65 fixed z-40   flex  justify-end"
     >

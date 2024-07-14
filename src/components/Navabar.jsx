@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Drawer from "./Drawer";
-import { FaBars } from "react-icons/fa6";
+import { HiBars4 } from "react-icons/hi2";
 import { IoCloseSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
 const Navbar = ({ setActiveList, activeList }) => {
@@ -98,16 +98,16 @@ const Navbar = ({ setActiveList, activeList }) => {
             </a>
           </li>
         </ul>
-        <div className="flex sm:hidden justify-between p-2 fixed w-full border-[4px] z-50 border-b-gray-800 top-0 text-white items-center bg-[#0094c6]">
-          <h1 className="font-semibold tracking-wider text-xl">Totib</h1>
+        <div className="flex sm:hidden justify-between p-1 fixed w-full border-[4px] z-50 border-b-gray-800 top-0 text-white items-center bg-[#0094c6]">
+          <h1 className="font-bold tracking-wider text-xl uppercase">Totib</h1>
           <button
-            className="transition-all p-2 hover:opacity-80 "
+            className="p-2 border border-white cursor-pointer z-50 hover:bg-black/20 transition-all"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <IoCloseSharp className="" />
+              <IoCloseSharp className="text-xl" />
             ) : (
-              <FaBars className="" />
+              <HiBars4 className="text-xl" />
             )}
           </button>
         </div>

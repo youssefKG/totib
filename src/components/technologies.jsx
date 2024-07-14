@@ -28,7 +28,7 @@ const Technologies = ({ technologiesRef }) => {
         {skillsImageUrls.map((url) => (
           <motion.img
             src={url}
-            className="sm:w-28 sm:h-28 w-16 h-16 border-b bg-white rounded-full
+            className="sm:w-24 sm:h-24 w-16 h-16 border-b bg-white rounded-full
             object-contain hover:scale-105 transition-all cursor-pointer
             border-r   border-[#0094c6] p-2"
             alt="tec"
