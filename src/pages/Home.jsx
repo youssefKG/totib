@@ -1,13 +1,11 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Journey from "../components/Experiences";
 import Navbar from "../components/Navabar";
-import Contact from "../components/Contact";
 import Technologies from "../components/technologies.jsx";
 import useVisibleSection from "../hooks/useHeighlightContent.jsx";
 import ProjectDrawer from "../components/ProjectDrawer.jsx";
-import ParticlesContainer from "../components/Particles.jsx";
 import Services from "../components/Service.jsx";
 
 const Home = () => {
