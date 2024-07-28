@@ -14,7 +14,7 @@ const Services = ({ servicesRef }) => {
       whileInView={whileInView}
       transition={transition}
       ref={servicesRef}
-      id=""
+      id="service"
       className="sm:h-screen w-full  flex flex-col  flex-initial justify-center  gap-8 relative
       p-2 text-white font-medium   "
     >

@@ -23,8 +23,8 @@ const Drawer = ({ isMenuOpen, closeMenu, menuRef }) => {
       <a href="#projects" onClick={closeMenu}>
         Projects
       </a>
-      <a href="#contact" onClick={closeMenu}>
-        Contact
+      <a href="#serivce" onClick={closeMenu}>
+        Serivce
       </a>
     </div>
   );
