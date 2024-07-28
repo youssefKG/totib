@@ -37,20 +37,23 @@ const About = ({ aboutRef }) => {
             <p className="max-w-xl border-dotted  border-gray-600 text-sm sm:text-base border-x p-2 sm:p-8 tracking-wider text-gray-200">
               Hi There, I'm{" "}
               <span className="font-semibold text-[#0094c6]">
-                Youssed Taoussi{" "}
+                Youssef Taoussi{" "}
               </span>
-              I'm a self-motivated and detail-oriented
+              I'm a self-motivated and detail-oriented{" "}
               <span className="font-semibold text-[#0094c6]">
-                {" "}
-                MERN stack developer{" "}
+                A full stack developer{" "}
               </span>
-              with a good understanding of the HTML, CSS ans Javascript concepts
-              necessary to build interactive and pixel-perfect user interface
-              designs to serve-side back-end programming. Keen to gain more
-              experience in software development and everything in its orbit
-              through challenging projects. Excited about learning new
-              technologies and practicing code with a serious focus on
-              developing scalable and clean code.
+              skilled in JavaScript and TypeScript, with experience in using
+              frameworks and libraries like React for frontend development and
+              Express for backend development, is well-versed in creating
+              dynamic and responsive web applications. This developer can work
+              with both SQL databases like MySQL and NoSQL databases like
+              MongoDB, enabling them to build comprehensive and scalable
+              solutions. Their expertise also extends to using tools and
+              technologies such as Git for version control, Tailwind CSS for
+              styling, and various other modern web development tools, allowing
+              them to manage both client-side and server-side development
+              efficiently.{" "}
             </p>
           </div>
           <button
