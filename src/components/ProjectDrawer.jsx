@@ -69,15 +69,15 @@ const ProjectDrawer = ({ handleCloseProjectDetail, projectDetail }) => {
           </p>
 
           <div className="flex items-center gap-4 flex-wrap">
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex gap-2 flex-wrap items-center">
               <h1 className="font-semibold">Technologies: </h1>
               {projectDetail?.tec.map((t) => (
-                <p
-                  className="p-1 px-3 text-gray-300  font-medium bg-[#005e7c]/70
-              text-[15px] rounded-full"
-                >
-                  {t}
-                </p>
+                <div className="flex gap-2  p-3 items-center  bg-[#005e7c]/70">
+                  <img src={t.logo} className="w-8 h-8" />
+                  <p className="text-gray-300  font-bold text-[15px] rounded-full">
+                    {t.name}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
