@@ -19,7 +19,6 @@ const logos = {
   github:
     "https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000",
 
-  github: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
   css: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
   html: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
   javascrip:
