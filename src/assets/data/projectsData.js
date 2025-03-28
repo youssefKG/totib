@@ -47,5 +47,28 @@ const projectsData = [
     ],
     demo: { email: "yousseftaussi894@gmail.com", password: 1234 },
   },
+  {
+    id: 3,
+    title: "Project management",
+    images: [
+      "https://i.pinimg.com/736x/3a/43/db/3a43db4099aff883d773b5259bfea559.jpg",
+      "https://i.pinimg.com/736x/61/bd/ed/61bdeddbffb58b043da4082e0f1e1d1e.jpg",
+      "https://i.pinimg.com/736x/e6/96/0e/e6960eea4e22d869180f9bf8c0cbba4b.jpg",
+      "https://i.pinimg.com/736x/3d/ff/bb/3dffbbd208263cda9793681885398b09.jpg",
+      "https://i.pinimg.com/736x/3d/ff/bb/3dffbbd208263cda9793681885398b09.jpg",
+      "https://i.pinimg.com/736x/90/13/3f/90133f64bc8bef683798f34de2571860.jpg",
+      "https://i.pinimg.com/736x/43/90/dc/4390dcd5a833c21847071b37e96caded.jpg",
+    ],
+    description:
+      " The CRUD Task Manager project is an extensive web application designed to streamline task management processes. Leveraging the power of React.js for the frontend, Node.js with Express.js for the backend, and MySQL for database management, this project offers a comprehensive solution for organizing tasks efficiently. The user interface is meticulously crafted using Tailwind CSS, ensuring a visually pleasing and responsive design that adapts seamlessly to different screen sizes and devices. Users are provided with a secure authentication system, allowing them to sign in and access their personalized task lists. Once authenticated, users can perform a myriad of actions including creating new tasks with detailed descriptions, setting due dates, assigning priorities, and categorizing tasks. The application facilitates easy navigation through tasks, enabling users to view, update, and delete tasks effortlessly. Each task's information is stored in a MySQL database, with Sequelize or similar ORM libraries handling data modeling and interactions, ensuring optimal performance and scalability. With its intuitive interface and robust functionality, the CRUD Task Manager empowers users to stay organized, boost productivity, and effectively manage their workload.",
+    tec: [
+      { name: "html", logo: logos["html"] },
+      { name: "css", logo: logos["css"] },
+      { name: "javascript", logo: logos.javascrip },
+      { name: "mysql", logo: logos.mysql },
+      { name: "PHP", logo: logos.php },
+    ],
+    demo: { email: "yousseftaussi894@gmail.com", password: 1234 },
+  },
 ];
 export default projectsData;

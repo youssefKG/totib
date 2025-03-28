@@ -25,8 +25,9 @@ const Technologies = ({ technologiesRef }) => {
         Technologies :
       </h>
       <div className="flex flex-wrap justify-center max-w-3xl gap-3 items-center rounded-full">
-        {skillsImageUrls.map((url) => (
+        {skillsImageUrls.map((url, i) => (
           <motion.img
+            key={i}
             src={url}
             className="sm:w-24 sm:h-24 w-16 h-16 border-b bg-white rounded-full
             object-contain hover:scale-105 transition-all cursor-pointer
